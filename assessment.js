@@ -7,7 +7,7 @@ console.log(myName);
 // #2 create a variable called 'faveNum' and assign it to your favorite number
 
 // CODE HERE
-var faveNum = "13";
+var faveNum = 13;
 console.log(faveNum);
 
 // #3 create a variable called 'lovesCode' and set it to true
@@ -19,8 +19,8 @@ console.log(lovesCode);
 // #4 Using the previously created variables, create a new variable called 'me' that uses the myName and faveNum varible to create a sentence like this 'My name is Bryan and my favorite number is 3'
 
 // CODE HERE
-var me = (myName + faveNum);
-console.log("My name is " + myName + " and my favorite number is "+faveNum);
+var me =( "My name is " + myName + " and my favorite number is "+faveNum);
+console.log(me);
 
 
 // #5 Using the previously created faveNum variable, create a new variable called 'trueFaveNum'. *trueFaveNum* should equal true when comparing faveNum to your favorite number.v // HINT: Use a comparison operator
@@ -67,16 +67,15 @@ var colorResponse;
 var responseCreator = function(param){
   // CODE HERE
 
-if (param=="Green"){
-
-  return colorResponse = "Green is okay,"
-} else if (param=="Red"){
-  return colorResponse = "I heart red."
+if (param=="green"){
+  return colorResponse = "Green is okay"
+} else if (param=="red"){
+  return colorResponse = "I heart red"
 } else {
-  return colorResponse = "What is your favorite color";
+  return colorResponse = "What is your favorite color?";
 };
 };
-console.log(responseCreator("Green"));
+console.log(colorResponse);
 
 // #9 Create a function called 'sum' that takes in one parameter and returns the sum of that parameter added it itself.
 
@@ -90,7 +89,8 @@ function sum(num1){
 // #10 Create a function called 'greeter' that takes in two parameters, name and number. Have 'greeter' return a string that says something like this 'Hi! I am Bryan and I am 28 years old" but with the appropriate values..
 
 // CODE HERE
-var age = 23;
-function greeter (myName, age){
+
+function greeter (name, number){
+  return "Hi! I am " + name + " and I am " + number + " years old";
 };
-console.log("Hi! I am " + myName + " and I am " + age + " years old")
+console.log(greeter);
